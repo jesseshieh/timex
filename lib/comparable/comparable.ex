@@ -6,7 +6,7 @@ defprotocol Timex.Comparable do
 
   @type granularity :: :years | :months | :weeks | :calendar_weeks | :days | :hours | :minutes | :seconds | :timestamp
   @type constants :: :epoch | :zero | :distant_past | :distant_future
-  @type comparable :: DateTime.t | Date.t | Types.date | Types.datetime | Types.gregorian | constants
+  @type comparable :: Timex.DateTime.t | Date.t | Types.date | Types.datetime | Types.gregorian | constants
   @type compare_result :: -1 | 0 | 1 | {:error, term}
 
   @doc """
